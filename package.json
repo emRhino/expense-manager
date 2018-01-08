@@ -15,19 +15,17 @@
     "react-dom": "^16.2.0",
     "react-modal": "^3.1.10",
     "react-router-dom": "^4.2.2",
-    "react-scripts": "1.0.17",
-    "webpack": "^3.10.0"
+    "react-scripts": "1.0.17"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "webpack": "webpack",
+    "start": "npm run webpack && nodemon --exec babel-node -- bin/www"
   },
   "devDependencies": {
     "eslint-config-airbnb": "^16.1.0",
     "eslint-plugin-import": "^2.8.0",
     "eslint-plugin-jsx-a11y": "^6.0.3",
-    "eslint-plugin-react": "^7.5.1"
+    "eslint-plugin-react": "^7.5.1",
+    "webpack": "^3.10.0"
   }
 }
